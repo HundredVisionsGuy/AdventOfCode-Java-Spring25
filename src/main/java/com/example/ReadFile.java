@@ -19,6 +19,7 @@ public class ReadFile {
       e.printStackTrace();
     }
   }
+  // get a file in the form of an arraylist (each items is a line in the file)
   public static ArrayList<String> getInput(String filePath) {
     ArrayList<String> data = new ArrayList<String>();
     try {
@@ -30,8 +31,9 @@ public class ReadFile {
         }
         myReader.close();
       } catch (FileNotFoundException e) {
-        data.add(e.toString());
+        System.out.println(e.toString());
+        // data.add(e.toString());
       }
-      return data;
+    return data;
   }
 }
