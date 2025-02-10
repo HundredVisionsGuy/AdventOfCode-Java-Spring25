@@ -32,7 +32,6 @@ public class ReadFile {
         myReader.close();
       } catch (FileNotFoundException e) {
         System.out.println(e.toString());
-        // data.add(e.toString());
       }
     return data;
   }

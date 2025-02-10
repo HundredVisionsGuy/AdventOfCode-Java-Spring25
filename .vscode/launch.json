@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DayOne2015",
+            "request": "launch",
+            "mainClass": "com.example.DayOne2015",
+            "projectName": "adventofcode"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
