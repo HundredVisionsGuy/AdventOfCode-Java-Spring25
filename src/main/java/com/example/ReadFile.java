@@ -19,7 +19,8 @@ public class ReadFile {
       e.printStackTrace();
     }
   }
-  // get a file in the form of an arraylist (each items is a line in the file)
+
+  // get a file in the form of an arraylist (each item is a line in the file)
   public static ArrayList<String> getInput(String filePath) {
     ArrayList<String> data = new ArrayList<String>();
     try {
