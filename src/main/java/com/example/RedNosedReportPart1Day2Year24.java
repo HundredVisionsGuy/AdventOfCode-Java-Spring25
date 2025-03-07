@@ -60,19 +60,23 @@ public class RedNosedReportPart1Day2Year24 {
     }
     private static ArrayList<Integer> getLevels(String report) {
         ArrayList<Integer> levels = new ArrayList<>();
+        int level;
+        String currentNumber = "";
 
         // loop through the characters in the report
         for (int i = 0; i<report.length(); i++) {
             // if there is a space continue to next number
             char item = report.charAt(i);
             if (Character.isSpaceChar(item)) {
-                continue;
+                if (! currentNumber.equals("")) {
+                    level = Integer.valueOf(currentNumber);
+                    levels.add(level);
+                    currentNumber = "";
+                }
             }
-            // convert level to an integer
-            int level = Character.getNumericValue(item);
-
-            // add level to levels
-            levels.add(level);
+            else {
+                currentNumber += Character.toString(item);
+            }
         }
 
         return levels;
