@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RedNosedReportPart1Day2Year24",
+            "request": "launch",
+            "mainClass": "com.example.RedNosedReportPart1Day2Year24",
+            "projectName": "adventofcode"
+        },
+        {
+            "type": "java",
             "name": "DayOne2015",
             "request": "launch",
             "mainClass": "com.example.DayOne2015",
